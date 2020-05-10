@@ -18,4 +18,4 @@ Depending on the value of "event", the function will check whether the email is 
   rsvpdNew    // for QU only, whether the email rsvp'd through the new form
 }
 ```
-Requires the existence of `api_key.json` and `credentials.json` (service account credentials) in the `functions` folder. Create them in the GCP Console: APIS & Services -> Credentials. Make sure the API Key has access to the Google Sheets API. Last step is granting access to the email of the service account to the Google Sheets you'd like to read from (click Share on the sheets and add the service account with Read permissions).
+Requires the existence of `api_key.json` and `credentials.json` (service account credentials). Create them in the GCP Console: APIS & Services -> Credentials. Make sure the API Key has access to the Google Sheets API. Last step is granting access to the email of the service account to the Google Sheets you'd like to read from (click Share on the sheets and add the service account with Read permissions).
