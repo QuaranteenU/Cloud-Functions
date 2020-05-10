@@ -1,3 +1,3 @@
-const checkEmail = require('checkEmail');
+const checkEmail = require("checkEmail");
 
 exports.checkEmail = checkEmail.handler;
