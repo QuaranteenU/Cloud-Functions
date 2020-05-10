@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "functions-framework --target=checkEmail",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "deploy-check-email": "gcloud functions deploy checkEmail --entry-point checkEmail --runtime nodejs8 --trigger-http --allow-unauthenticated"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Rudhra Raveendran",
+  "license": "MIT",
   "dependencies": {
     "googleapis": "^50.0.0"
   },
