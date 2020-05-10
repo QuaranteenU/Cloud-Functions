@@ -1,0 +1,19 @@
+{
+  "name": "qu-cloud-functions",
+  "version": "1.0.0",
+  "description": "Cloud functions for QU tools",
+  "main": "index.js",
+  "scripts": {
+    "start": "functions-framework --target=checkEmail",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^50.0.0"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.5.1",
+    "prettier": "^1.19.1"
+  }
+}
