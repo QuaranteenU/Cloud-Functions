@@ -51,7 +51,7 @@ exports.handler = async (req, res) => {
 
       // check if the user has rsvp'd in the new form (QU only)
       const newRSVPSheetId = "1NqC5gnSiyBNDmPYg28mY7EbVojmYYOypdh5TzXys4WE";
-      let newRSVPs = await getSheetData(jwt, apiKey, newRSVPSheetId, "B2:B");
+      let newRSVPs = await getSheetData(jwt, apiKey, newRSVPSheetId, "P2:P");
       newRSVPs = newRSVPs.data.values ? newRSVPs.data.values.filter(v => v.length === 1).map(v => v[0]) : [];
       const rsvpdNew = newRSVPs.includes(req.body.email);
 
