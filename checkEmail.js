@@ -81,7 +81,7 @@ exports.handler = async (req, res) => {
 
       // check if the user has rsvp'd
       const rsvpSheetId = "1A3wrDiaC7SICy8fs4S8qNvzpx28UsfNn8NLfpOmPtD8";
-      let rsvps = await getSheetData(jwt, apiKey, rsvpSheetId, "B2:B");
+      let rsvps = await getSheetData(jwt, apiKey, rsvpSheetId, "L2:L");
       rsvps = rsvps.data.values ? rsvps.data.values.filter(v => v.length === 1).map(v => v[0]) : [];
       const rsvpd = rsvps.includes(req.body.email);
 
