@@ -19,3 +19,6 @@ Depending on the value of "event", the function will check whether the email is 
 }
 ```
 Requires the existence of `api_key.json` and `credentials.json` (service account credentials). Create them in the GCP Console: APIS & Services -> Credentials. Make sure the API Key has access to the Google Sheets API. Last step is granting access to the email of the service account to the Google Sheets you'd like to read from (click Share on the sheets and add the service account with Read permissions).
+
+## Notice
+This workflow is only needed because we collected data from Google Forms, which gets stored in a Google Sheet. Considering how often we had to manipulate data, get statistics, etc. it would've made more sense to just use Firebase to store the data. If that's implemented, this repo can be deprecated.
